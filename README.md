@@ -4,7 +4,7 @@ CLI tool to batch convert JPEG images to PNG format while preserving existing PN
 
 This Python script automates the process of converting images. It takes an input folder, converts all JPEG (`.jpg`, `.jpeg`) images to PNG format, and copies any existing PNG images to a new output folder.
 
----
+
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ You need **Python 3.x** and **pip** installed on your system.
     ```
 
 
-## 🚀 How to Use
+## How to Use
 
 Once installed, you can run the script from your terminal.
 
