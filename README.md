@@ -1,52 +1,58 @@
-JPEG to PNG Image Converter
+# JPEG to PNG Image Converter
 
-This Python script automates the process of converting images. It takes an input folder, converts all JPEG (.jpg, .jpeg) images to PNG format, and copies any existing PNG images to a new output folder.
-Features
+CLI tool to batch convert JPEG images to PNG format while preserving existing PNGs.
 
-    Converts JPEG images to high-quality PNGs.
+This Python script automates the process of converting images. It takes an input folder, converts all JPEG (`.jpg`, `.jpeg`) images to PNG format, and copies any existing PNG images to a new output folder.
 
-    Copies original PNG images without re-compression.
+---
 
-    Ignores other file types and subdirectories.
+## Getting Started
 
-    Automatically creates the output directory if it does not exist.
+Follow these instructions to get the project up and running on your local machine.
 
-    Provides a simple and flexible command-line interface.
+### Prerequisites
 
-Prerequisites
+You need **Python 3.x** and **pip** installed on your system.
 
-To run this script, you need Python and pip installed on your system. All the necessary Python libraries are listed in the requirements.txt file.
+### Installation
 
-You can install all dependencies at once using pip. This is the recommended method, especially within a container.
 
-pip install -r requirements.txt
+1.  **Clone the repository** (or download the files into a single directory):
+    ```bash
+    git clone https://github.com/WokyDoky/jpegConverter
+    cd 
+    ```
 
-How to Run the Script
+2.  **Install the required Python libraries** from `requirements.txt`:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-    Save the Script & Requirements: Save image_converter.py and requirements.txt in the same directory.
 
-    Prepare Your Images: Place all the images you want to process into a single folder.
+## 🚀 How to Use
 
-    Open Your Terminal: Open a command prompt (on Windows) or terminal (on macOS/Linux).
+Once installed, you can run the script from your terminal.
 
-    Navigate to the Script's Directory: Use the cd command to move into the directory where you saved the files.
+1. Prepare Your Images: Place all the images you want to process into a single folder.
 
-    Install Dependencies: Run the installation command from the "Prerequisites" section above.
+2. Open Your Terminal: Open a command prompt (on Windows) or terminal (on macOS/Linux).
 
-    Execute the Script: Run the script from your terminal, telling it where your images are located.
+3. Navigate to the Script's Directory: Use the cd command to move into the directory where you saved the files.
 
-Command Examples
+4. Install Dependencies: Run the installation command from the "Prerequisites" section above.
 
-1. Basic Usage (Default Output Folder)
+5. Execute the Script: Run the script from your terminal, telling it where your images are located.
 
-This is the simplest way to run the script. It will process images from a folder named source_images and create a new folder called png_output in the same directory to store the results.
+### Command Examples
 
+```bash
 python image_converter.py ./source_images
+```
 
-2. Specifying a Custom Output Folder
+**Specifying a Custom Output Folder**
 
 If you want to save the processed images to a specific folder (e.g., converted_images), you can use the -o or --output flag.
 
+```bash
 python image_converter.py ./source_images -o ./converted_images
-
-The script will print its progress in the terminal, letting you know which files are being converted or copied.
+```
